@@ -220,6 +220,10 @@ func (it *gormw) Rollback() igorm.Gormw {
 	return it
 }
 
+func (it *gormw) RollbackUnlessCommitted() igorm.Gormw {
+	return it
+}
+
 func (it *gormw) NewRecord(value interface{}) bool {
 	return false
 }
